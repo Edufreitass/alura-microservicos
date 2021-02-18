@@ -16,6 +16,16 @@ public class InfoFornecedor {
 	private String estado;
 	private String endereco;
 
+	public InfoFornecedor() {
+	}
+
+	public InfoFornecedor(Long id, String nome, String estado, String endereco) {
+		this.id = id;
+		this.nome = nome;
+		this.estado = estado;
+		this.endereco = endereco;
+	}
+
 	public Long getId() {
 		return id;
 	}
