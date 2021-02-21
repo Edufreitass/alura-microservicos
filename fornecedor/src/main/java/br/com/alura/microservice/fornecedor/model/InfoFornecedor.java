@@ -1,4 +1,4 @@
-package br.com.alura.microservices.fornecedor.model;
+package br.com.alura.microservice.fornecedor.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,20 +11,12 @@ public class InfoFornecedor {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
+	
 	private String nome;
+	
 	private String estado;
+	
 	private String endereco;
-
-	public InfoFornecedor() {
-	}
-
-	public InfoFornecedor(Long id, String nome, String estado, String endereco) {
-		this.id = id;
-		this.nome = nome;
-		this.estado = estado;
-		this.endereco = endereco;
-	}
 
 	public Long getId() {
 		return id;
@@ -57,5 +49,6 @@ public class InfoFornecedor {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-
+	
+	
 }
